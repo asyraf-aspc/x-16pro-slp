@@ -49,7 +49,7 @@
 }
 
 .asx16-inner {
-  width: min(100% - 36px, 1120px);
+  width: min(100% - 36px, 1240px);
   margin: 0 auto;
 }
 
@@ -449,7 +449,7 @@
 }
 
 .asx16-wide-media {
-  width: min(100% - 36px, 1240px);
+  width: min(100% - 36px, 1320px);
   margin: 34px auto 0;
   aspect-ratio: 16 / 6.4;
 }
@@ -1314,7 +1314,7 @@
 
 @media (min-width: 761px) {
   .asx16-hero__copy {
-    width: min(100% - 56px, 1180px);
+    width: min(100% - 56px, 1280px);
     margin-top: -154px;
     padding: 46px;
     border-radius: 28px 28px 0 0;
@@ -1600,6 +1600,438 @@
   }
 }
 
+/* Expanded graphics section */
+.asx16-graphics-overview {
+  margin-top: 30px;
+  padding: 26px 28px 30px;
+  border: 1px solid rgba(245, 245, 247, 0.12);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.26);
+}
+
+.asx16-blackwell-banner {
+  margin-top: 28px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid rgba(245, 245, 247, 0.12);
+  border-radius: 30px;
+  background: #000000;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.42);
+}
+
+.asx16-blackwell-banner__eyebrow {
+  margin: 0;
+  color: rgba(245, 245, 247, 0.82);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.asx16-blackwell-banner__title {
+  max-width: 18ch;
+  margin: 12px auto 0;
+  color: #ffffff;
+  font-family: var(--asx16-font-display);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.asx16-blackwell-banner__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(18px, 3vw, 34px);
+  align-items: center;
+  margin-top: 28px;
+}
+
+.asx16-blackwell-banner__image {
+  overflow: hidden;
+  border-radius: 24px;
+  background: #060607;
+}
+
+.asx16-blackwell-banner__image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.28 / 1;
+  object-fit: cover;
+}
+
+.asx16-blackwell-banner__specs {
+  display: grid;
+  gap: 22px;
+}
+
+.asx16-blackwell-banner__specs div {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(245, 245, 247, 0.08);
+}
+
+.asx16-blackwell-banner__specs div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.asx16-blackwell-banner__specs strong,
+.asx16-blackwell-tile h4 {
+  display: block;
+  color: #ffffff;
+  font-family: var(--asx16-font-display);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.asx16-blackwell-banner__specs span,
+.asx16-blackwell-tile p {
+  display: block;
+  margin-top: 8px;
+  color: rgba(245, 245, 247, 0.72);
+  line-height: 1.6;
+}
+
+.asx16-blackwell-banner__tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.asx16-blackwell-tile {
+  min-height: 196px;
+  padding: 22px 18px;
+  border: 1px solid rgba(245, 245, 247, 0.1);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.03);
+  text-align: center;
+}
+
+.asx16-blackwell-tile img {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 16px;
+}
+
+.asx16-blackwell-tile h4 {
+  font-size: 1rem;
+}
+
+.asx16-blackwell-tile p {
+  margin-bottom: 0;
+  font-size: 0.88rem;
+}
+
+.asx16-graphics-overview__lead {
+  max-width: 780px;
+  margin: 0 auto;
+  color: rgba(245, 245, 247, 0.76);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.asx16-graphics-overview__facts {
+  display: grid;
+  width: min(100%, 780px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+  margin-inline: auto;
+}
+
+.asx16-graphics-overview__facts span,
+.asx16-graphics-link--tile {
+  display: flex;
+  min-height: 74px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border: 1px solid rgba(245, 245, 247, 0.12);
+  border-radius: 18px;
+  background: rgba(245, 245, 247, 0.05);
+  color: #f5f5f7;
+  text-align: center;
+}
+
+.asx16-graphics-overview__facts span {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.asx16-graphics-overview__facts strong {
+  display: block;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.asx16-graphics-overview__value {
+  display: block;
+  color: rgba(245, 245, 247, 0.88);
+  font-size: 0.96rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.asx16-graphics-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-height: 42px;
+  margin-top: 18px;
+  padding: 10px 16px;
+  border: 1px solid rgba(245, 245, 247, 0.16);
+  border-radius: 999px;
+  background: rgba(245, 245, 247, 0.055);
+  color: #f5f5f7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.asx16-graphics-link--tile {
+  width: 100%;
+  margin-top: 0;
+}
+
+.asx16-architecture__copy {
+  margin: 12px 0 0;
+  color: rgba(245, 245, 247, 0.72);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.asx16-card__body--rich {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.asx16-card__body--rich h3,
+.asx16-card__body--rich p {
+  margin: 0;
+}
+
+.asx16-card__intro,
+.asx16-detail-group p {
+  color: #aeb2ba;
+  line-height: 1.72;
+}
+
+.asx16-detail-group {
+  padding-top: 18px;
+  border-top: 1px solid rgba(245, 245, 247, 0.08);
+}
+
+.asx16-detail-group h4 {
+  margin: 0 0 10px;
+  color: #f5f5f7;
+  font-family: var(--asx16-font-display);
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.asx16-feature-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: #aeb2ba;
+}
+
+.asx16-feature-list li::marker {
+  color: rgba(245, 245, 247, 0.74);
+}
+
+.asx16-stat-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.asx16-stat-mini-grid span,
+.asx16-inline-pills span {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(245, 245, 247, 0.12);
+  border-radius: 16px;
+  background: rgba(245, 245, 247, 0.055);
+  color: #c9ccd3;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.asx16-stat-mini-grid span {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.asx16-inline-pills span {
+  min-height: 40px;
+  padding-inline: 14px;
+}
+
+.asx16-stat-mini-grid strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.asx16-app-tags,
+.asx16-inline-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.asx16-app-tags span {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid rgba(245, 245, 247, 0.12);
+  border-radius: 999px;
+  background: rgba(245, 245, 247, 0.045);
+  color: #d7d9df;
+  font-size: 0.8rem;
+  line-height: 1.25;
+}
+
+@media (hover: hover) {
+  .asx16-graphics-link:hover {
+    background: rgba(245, 245, 247, 0.12);
+    border-color: rgba(245, 245, 247, 0.28);
+  }
+}
+
+@media (max-width: 760px) {
+  .asx16-blackwell-banner {
+    margin-top: 24px;
+    padding: 22px 18px;
+    border-radius: 24px;
+  }
+
+  .asx16-blackwell-banner__hero {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .asx16-blackwell-banner__image {
+    border-radius: 20px;
+  }
+
+  .asx16-blackwell-banner__tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .asx16-blackwell-tile {
+    min-height: 174px;
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+
+  .asx16-graphics-overview {
+    margin-top: 24px;
+    padding: 22px 18px;
+    border-radius: 22px;
+  }
+
+  .asx16-graphics-grid,
+  #asx16-graphics .asx16-two-up {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #asx16-graphics .asx16-media--split {
+    aspect-ratio: 16 / 10;
+  }
+
+  #asx16-graphics .asx16-architecture,
+  #asx16-graphics .asx16-card__body {
+    padding: 18px;
+  }
+
+  .asx16-graphics-overview__facts {
+    grid-template-columns: 1fr;
+  }
+
+  .asx16-graphics-overview__facts span,
+  .asx16-graphics-link--tile {
+    min-height: 62px;
+  }
+
+  .asx16-card__body--rich {
+    gap: 16px;
+  }
+
+  .asx16-detail-group {
+    padding-top: 16px;
+  }
+
+  .asx16-stat-mini-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .asx16-blackwell-banner__title {
+    max-width: 11ch;
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+  }
+
+  .asx16-blackwell-banner__image img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .asx16-blackwell-banner__specs {
+    gap: 16px;
+  }
+
+  .asx16-blackwell-banner__specs strong {
+    font-size: 1.05rem;
+  }
+
+  .asx16-blackwell-banner__tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .asx16-blackwell-tile {
+    min-height: 0;
+  }
+
+  .asx16-graphics-overview__lead,
+  .asx16-architecture__copy,
+  .asx16-card__intro,
+  .asx16-detail-group p,
+  .asx16-feature-list {
+    font-size: 0.92rem;
+  }
+
+  #asx16-graphics .asx16-media--split {
+    aspect-ratio: 1 / 1;
+  }
+
+  .asx16-inline-pills span,
+  .asx16-stat-mini-grid span {
+    min-height: 54px;
+  }
+}
+
 /* Refined bottom assurance section */
 .asx16-assurance {
   padding: 92px 0 108px;
@@ -1611,7 +2043,7 @@
 }
 
 .asx16-assurance .asx16-inner {
-  width: min(100% - 36px, 1180px);
+  width: min(100% - 36px, 1280px);
 }
 
 .asx16-assurance__banner,
